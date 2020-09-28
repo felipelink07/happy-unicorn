@@ -30,7 +30,6 @@ body {
   width: 80%;
   max-width: 750px;
   margin: 0 auto;
- 
 }
 
 .row{
@@ -109,4 +108,10 @@ body {
   background-color: #eecc24;
   cursor: pointer;
   transition: all 0.2s linear;
+}
+
+.intro-img{
+  align-items: flex-start;
+  width: 100%;
+  margin-left: 3rem;
 }
