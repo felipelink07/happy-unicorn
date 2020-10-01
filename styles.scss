@@ -1,0 +1,260 @@
+/* INSTRUCTIONS
+ *
+ * 1) Keep the text inside .intro-content
+ *    in the same place, but have the background
+ *    extend from one side of the viewport
+ *    to the other, no matter how wide or narrow
+ *    the browser is.
+ *
+ * 2) Limit the maximum width of the text in the
+ *    bottom area.
+ *
+ * You may modify the HTML if needed
+ * (you probably should for this challenge)
+ *
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* Variables */
+
+:root {
+    --primary-color: #4d4c7d;
+    --secondary-color: #fddb3a;
+    --accent-text: #8c8ad8;
+    --default-text-color: #5e5e5e;
+    --accent-text: #fbcffc;
+}
+
+@mixin nav-link-styles {
+    
+}
+
+/* Base Styles */
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60%;
+}
+
+/* Compónents */
+
+
+.container {
+    width: 80%;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+
+/* Header styles */
+
+
+.intro {
+    background: #4d4c7d;
+    background: linear-gradient(90deg, rgba(77, 76, 125, 1) 0%, rgba(54, 48, 98, 1) 100%);
+    color: white;
+    padding: 2.5rem 0;
+
+    .nav-bar{
+        box-sizing: border-box;
+        background-color: rgba(114, 106, 149, 0.2);
+        margin-top: -3rem;
+        margin-bottom: 3rem;
+
+        .main-nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 500px;
+            height: 5rem;
+
+            li{
+                list-style-type: none;
+               
+                a{
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    color: white;
+                    
+                    &:hover{
+
+                    }
+                }
+            }
+        }
+    }
+
+    .intro-content {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+
+        h2 {
+            font-size: 2.625rem;
+            font-weight: 900;
+        }
+        
+         p {
+            font-size: 1.2rem;
+        }
+        
+         a {
+            text-decoration: none;
+            text-align: center;
+            color: #2c003e;
+            background-color: var(--secondary-color);
+            padding: 1rem;
+            display: inline-block;
+            border-radius: 0.3rem;
+            width: 100%;
+            max-width: 400px;
+            transition: all 0.2s linear;
+            margin-top: 2rem;
+            font-weight: 700;
+            font-size: 21px;
+
+            &:hover {
+                background-color: #eecc24;
+                cursor: pointer;
+                transition: all 0.2s linear;
+            }
+        }
+        
+        
+
+    }
+    
+    .intro-img {
+        align-items: flex-start;
+        width: 100%;
+        margin-left: 3rem;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+
+}
+
+
+
+/* Main styles */
+
+.main {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1000px;
+    padding: 3rem 0;
+
+    .main-intro {
+        width: 60%;
+        padding: 0 2.4rem;
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+            color: var(--default-text-color);
+        }
+        
+        h3 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+        }
+    }
+
+    .accent-text {
+        color: #8c8ad8;
+    }    
+
+}
+
+
+/* sidebar styles */
+
+
+
+.sidebar {
+    display: flex;
+    flex-flow: column;
+    width: 36%;
+    padding: 3rem;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-radius: 0.5rem;
+
+    p {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+        color: white;
+    }
+    
+    a{
+        color: var(--secondary-color);
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s linear;
+        
+        &:hover{
+            text-decoration: underline;
+            transition: all 0.3s linear;
+        }
+        
+    }
+    
+
+    ul{
+        margin: 0;
+        padding: 1rem;
+        li{
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            
+        }
+    }
+}
+
+
+/* footer styles */
+
+
+.footer {
+    background-color: rgba(246, 245, 245, .5);
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: space-evenly;
+
+    div {
+        width: 37.5rem;
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        p {
+            line-height: 2rem;
+            color: var(--default-text-color);
+            font-size: 1.1rem;
+        }
+    }
+
+}
+
+
