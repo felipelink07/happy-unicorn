@@ -1,5 +1,5 @@
 # Reponsive-layouts-study
-## Objetivo
+### Objetivo
 Eestudo de design responsivo usando HTML e CSS seguindo os curso [**conquering-responsive-layouts**](https://courses.kevinpowell.co/courses/conquering-responsive-layouts/233002-introduction/1007804-intro-why-the-course-is-formatted-in-this-way)
 ministrado pelo professor e produtor de conteúdo **Kevin Powell**
 
