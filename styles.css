@@ -21,7 +21,7 @@
 
 /* Variables */
 :root {
-  --primary-color: #4d4c7d;
+  --primary-color: #7579e7;
   --secondary-color: #fddb3a;
   --accent-text: #8c8ad8;
   --default-text-color: #5e5e5e;
@@ -48,14 +48,13 @@ body {
 
 /* Header styles */
 .intro {
-  background: #4d4c7d;
-  background: linear-gradient(90deg, #4d4c7d 0%, #363062 100%);
+  background: var(--primary-color);
   color: white;
   padding: 2.5rem 0;
 }
 .intro .nav-bar {
   box-sizing: border-box;
-  background-color: rgba(114, 106, 149, 0.2);
+  background-color: rgba(154, 179, 245, 0.2);
   margin-top: -3rem;
   margin-bottom: 3rem;
 }
@@ -124,7 +123,7 @@ body {
   padding: 3rem 0;
 }
 .main .main-intro {
-  width: 60%;
+  width: 65%;
   padding: 0 2.4rem;
 }
 .main .main-intro p {
@@ -144,7 +143,7 @@ body {
 .sidebar {
   display: flex;
   flex-flow: column;
-  width: 36%;
+  width: 35%;
   padding: 3rem;
   background-color: var(--primary-color);
   color: #ffffff;
@@ -175,6 +174,7 @@ body {
 .sidebar ul li {
   font-size: 1.1rem;
   margin-bottom: 1rem;
+  line-height: 1.5rem;
 }
 
 /* footer styles */
@@ -192,7 +192,8 @@ body {
   color: var(--primary-color);
 }
 .footer div p {
-  line-height: 2rem;
+  line-height: 1.8rem;
   color: var(--default-text-color);
   font-size: 1.1rem;
+  font-weight: 300;
 }
