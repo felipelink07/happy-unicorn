@@ -179,6 +179,7 @@ body {
 .sidebar h3 {
   font-size: 1.5rem;
   color: white;
+  margin-top: 1.5rem;
 }
 .sidebar a {
   color: var(--secondary-color);
@@ -213,6 +214,7 @@ body {
 .footer div h3 {
   font-size: 1.5rem;
   color: var(--primary-color);
+  margin-bottom: 1.5rem;
 }
 .footer div p {
   line-height: 1.8rem;
