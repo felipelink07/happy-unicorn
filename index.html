@@ -16,60 +16,73 @@
     <header class="intro">
 
         <nav class="nav-bar">
-            <ul class="main-nav container">
+            <ul class="main-nav">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Documentation</a></li>
+                <li class="dropdown"><a href="#" >Documentation</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Get Start</a></li>
+                        <li><a href="#">Layout</a></li>
+                        <li><a href="#">Colors</a></li>
+                        <li><a href="#">Forms</a></li>
+                        <li><a href="#">Modifiers</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
 
-       <div class="container row">
-            <div class="intro-content">
+        <div class="intro-content">
+            <div class="intro-text">
                 <h2>HappyUnicorn.css</h2>
-                <p>A modern and brand new CSS library</p>
-                    <a href="#">Get Started</a>
+                <p>A modern and brand new CSS library<p>
+                <a href="#" class="cta">Get Started</a>
             </div>
-            
-                <div class="hero-img">
-                    <img class="intro-img" src="./img/unicorn.png" alt="">
-                </div>
-            
-       </div>
+
+            <div class="intro-img">
+                
+            </div>
+
+        </div>
 
     </header>
 
     <!--Main-->
 
-    <main class="main row">
+    <main class="main">
         <div class="main-intro">
             <h3>Don't waste your time.</h3>
-            <p>With <strong>happyunicorn.css</strong> you can edit and manipulate your html styles directly in the css file!</p>
+            <p>With <strong>happyunicorn.css</strong> you can edit and manipulate your html styles directly in the css
+                file!</p>
             <p>No more adding a bunch of classes and memorizing padding and margin numbers </p>
-            <p>The <strong>hu.css</strong> is made using SASS, one of the most used css libraries on the web. All the html content is manipulated trought the scss file and cimpliled in CSS</p>
-            <p>You just need the create the classes in the HTML file and make all modification in the css, or no classes at all!</p>
+            <p>The <strong>hu.css</strong> is made using SASS, one of the most used css libraries on the web. All the
+                html content is manipulated trought the scss file and cimpliled in CSS</p>
+            <p>You just need the create the classes in the HTML file and make all modification in the css, or no classes
+                at all!</p>
         </div>
-        
+
         <!-- Sidebar -->
-        
-        <div class="sidebar">
-                    <div>
-                        <h3>Caracteristics</h3>
-                        <ul>
-                            <li>No need to memorize hundreds of classes</li>
-                            <li>Simples application</li>
-                            <li>@include based: You import the styles using. <strong>@iclude</stron> insted of classes</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>What you need to start</h3>
-                        <p>In order to user our library you need onlye some knowleged about CSS and HTML. But you can handle well just with the basics and Sass is easy to learn. Check the <a href="#">Sass oficial site</a> to get start.</p>
-                    </div>
-                    <div>
-                        <h3>Tutorials</h3>
-                        <p>Need to lean how to use uh.css? We prepared a <a href="#">tutorial that show the basics.</a></p>
-                    </div>
-                </div>
+
+        <div class="main-sidebar">
+            <div class="topic">
+                <h3>Caracteristics</h3>
+                <ul>
+                    <li>No need to memorize hundreds of classes</li>
+                    <li>Simples application</li>
+                    <li>@include based: You import the styles using. <strong>@iclude</stron> insted of classes</li>
+                </ul>
+            </div>
+            <div class="topic">
+                <h3>What you need to start</h3>
+                <p>In order to user our library you need onlye some knowleged about CSS and HTML. But you can handle
+                    well just with the basics and Sass is easy to learn. Check the <a href="#">Sass oficial site</a> to
+                    get start.</p>
+            </div>
+            <div class="topic">
+                <h3>Tutorials</h3>
+                <p>Need to lean how to use uh.css? We prepared a <a href="#">tutorial that show the basics.</a></p>
+            </div>
+        </div>
         </div>
     </main>
 
@@ -77,20 +90,22 @@
 
     <foter>
         <div class="footer">
-            
-                <div>
-                    <h3>Who we are?</h3>
-                    <p>We are a team of designers and developers with the objective to make web designers and code fighters a little bit easer.</p>
-                </div>
-                <div>
-                    <h3>The main point</h3>
-                    <p>Our library is recomended for simple project and personal use only. But basically everybody can use this code.</p>
-                </div>
-            
-        </div>
-    </footer>
 
-    
+            <div class="footer-item">
+                <h3>Who we are?</h3>
+                <p>We are a team of designers and developers with the objective to make web designers and code fighters
+                    a little bit easer.</p>
+            </div>
+            <div class="footer-item">
+                <h3>The main point</h3>
+                <p>Our library is recomended for simple project and personal use only. But basically everybody can use
+                    this code.</p>
+            </div>
+
+        </div>
+        </footer>
+
+
 
 
 </body>
