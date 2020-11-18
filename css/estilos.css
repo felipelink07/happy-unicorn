@@ -1,0 +1,540 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*=============================================
+=            Container            =
+=============================================*/
+.container {
+  width: 100%;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 2rem 4rem;
+  }
+}
+/*=====  End of Container  ======*/
+/*=============================================
+=            Typographic Styles            =
+=============================================*/
+p {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+}
+
+/*=====  End of Typographic Styles  ======*/
+/*=============================================
+=            Color Variables                      =
+=============================================*/
+/*=====  End of Color Variables  ======*/
+.btn-cta {
+  display: block;
+  background-color: #ffe05d;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #a05344;
+  border-radius: 3px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.btn-cta:hover {
+  background-color: #ffcc5d;
+  transition: all 0.3s linear;
+}
+
+.download-btn {
+  background-color: #19d3da;
+  padding: 1rem 1rem;
+  border-radius: 3px;
+}
+
+.donate-btn {
+  background-color: #ffe05d;
+  padding: 1rem 1rem;
+  border-radius: 3px;
+}
+
+@media (min-width: 1000px) {
+  .btn-cta {
+    padding: 1.5rem 2rem;
+  }
+}
+/* Header Styles */
+.header {
+  background-color: #7579e7;
+}
+.header .navbar {
+  position: relative;
+  height: 10vh;
+}
+.header .navbar .navbar-links {
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  left: -70vw;
+  top: 0;
+  width: 70vw;
+  height: 100vh;
+  background-color: #7579e7;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0);
+  transition: all 0.3s linear;
+}
+.header .navbar .navbar-links a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin: 2rem 0;
+}
+.header .navbar .navbar-links a[class=download-btn] {
+  font-weight: 600;
+}
+.header .navbar .navbar-links a[class=donate-btn] {
+  color: #a05344;
+  font-weight: 600;
+}
+.header .navbar .show {
+  left: 0vw;
+  box-shadow: 5px 0px 25px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s linear;
+}
+
+/* Header Tablet */
+@media (min-width: 768px) {
+  .header .navbar .navbar-links {
+    background-color: rgba(154, 179, 245, 0.3);
+    height: 8vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    flex-flow: row;
+    justify-content: space-evenly;
+  }
+  .header #toggle-button {
+    display: none;
+  }
+}
+/* Header desktop */
+@media (min-width: 1000px) {
+  .header .navbar {
+    width: 100vw;
+  }
+  .header .navbar .navbar-links {
+    height: 7vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0 30%;
+    flex-flow: row;
+    justify-content: space-around;
+  }
+  .header #toggle-button {
+    display: none;
+  }
+}
+/* Intro Styles */
+.intro {
+  text-align: center;
+}
+.intro .intro-text h2 {
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.intro .intro-text p {
+  color: white;
+  font-size: 1rem;
+}
+.intro .intro-img {
+  display: none;
+}
+
+/* Intro Tablet */
+@media (min-width: 768px) {
+  .intro {
+    display: flex;
+    align-items: center;
+  }
+  .intro .intro-text {
+    width: 60%;
+    padding: 0;
+  }
+  .intro .intro-text h2 {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+  .intro .intro-text p {
+    font-size: 1.1rem;
+    text-align: left;
+  }
+  .intro .intro-img {
+    margin-left: 2rem;
+    display: block;
+  }
+}
+/* Intro Desktop */
+@media (min-width: 1000px) {
+  .intro {
+    max-width: 1200px;
+    justify-content: space-between;
+  }
+  .intro .intro-text {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 50%;
+    height: 350px;
+    padding: 0;
+  }
+  .intro .intro-text h2 {
+    font-size: 3.5rem;
+    text-align: left;
+  }
+  .intro .intro-text p {
+    font-size: 1.3rem;
+    text-align: left;
+    margin: 2rem 0;
+  }
+  .intro .intro-img {
+    margin-right: 0rem;
+    width: 350px;
+    height: 350px;
+  }
+}
+#toggle-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: block;
+  width: 42px;
+  height: 42px;
+  background-image: url("/img/system/menu.svg");
+  background-size: cover;
+}
+
+.close {
+  background-image: url("/img/system/close.svg");
+}
+
+/*=============================================
+=            Color Variables                      =
+=============================================*/
+/*=====  End of Color Variables  ======*/
+/* Main Styles */
+.main {
+  margin-top: 2rem;
+}
+
+.features-intro strong {
+  font-weight: 600;
+}
+
+/* features-intro Tablet */
+@media (min-width: 768px) {
+  .features .features-intro {
+    width: 80%;
+    margin-right: 2rem;
+  }
+  .features .features-intro p {
+    margin-bottom: 1rem;
+  }
+  .features .install-guide {
+    margin-top: 0;
+  }
+}
+.install-guide {
+  margin-top: 2rem;
+  padding: 2rem;
+  border: 2px solid rgba(204, 204, 204, 0.5);
+  border-radius: 3px;
+}
+.install-guide h4 {
+  color: #7579e7;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.install-guide p {
+  margin: 1rem 0;
+}
+.install-guide p + h4 {
+  margin-top: 1rem;
+}
+
+.features h3 {
+  color: #4c4c4c;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #7579e7;
+  margin-bottom: 2rem;
+}
+.features p {
+  color: #4c4c4c;
+}
+.features img {
+  display: none;
+}
+
+.include h3 {
+  color: #4c4c4c;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #7579e7;
+  margin-bottom: 2rem;
+}
+.include p {
+  color: #4c4c4c;
+}
+.include img {
+  display: none;
+}
+
+/* Features Tablet */
+@media (min-width: 768px) {
+  .features {
+    display: flex;
+  }
+  .features img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-left: 2rem;
+  }
+
+  .include p {
+    margin-right: 2rem;
+  }
+  .include img {
+    display: block;
+    width: 200px;
+    height: 200px;
+  }
+}
+.inner-feature {
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+/* Inner-feature Tablet */
+@media (min-width: 768px) {
+  .inner-feature {
+    max-width: 1200px;
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+  }
+  .inner-feature img {
+    width: 200px;
+    height: 200px;
+    margin-right: 2rem;
+  }
+}
+/* Features Desktop */
+@media (min-width: 1000px) {
+  .features {
+    align-items: center;
+    max-width: 1200px;
+    padding: 4rem 0;
+  }
+  .features p {
+    line-height: 1.8rem;
+    width: 90%;
+  }
+  .features .inner-feature div {
+    margin: 0 auto;
+  }
+  .features h3 {
+    font-size: 2.5rem;
+  }
+  .features p {
+    font-size: 1.2rem;
+  }
+  .features img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .features-intro {
+    align-self: flex-start;
+  }
+  .features-intro p {
+    line-height: 1.8rem;
+  }
+
+  .install-guide {
+    width: 70%;
+  }
+  .install-guide h3 {
+    font-size: 2rem;
+  }
+
+  .include {
+    padding: 4rem 0;
+  }
+
+  .inner-feature h3 {
+    font-size: 2.5rem;
+  }
+  .inner-feature p {
+    font-size: 1.2rem;
+  }
+  .inner-feature img {
+    width: 300px;
+    height: 300px;
+  }
+}
+.bg-grey {
+  background-color: rgba(244, 244, 244, 0.5);
+}
+
+.code {
+  background-color: #fafafa;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.link {
+  color: #7579e7;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Team Styles */
+.team h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #7579e7;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.team .team-people {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.team .team-people .team-person {
+  text-align: center;
+}
+.team .team-people .team-person img {
+  margin-bottom: 1rem;
+  transition: all 0.2s linear;
+}
+.team .team-people .team-person h4 {
+  font-weight: 600;
+  color: #7579e7;
+}
+.team .team-people .team-person p {
+  color: #4c4c4c;
+  margin: 0.8rem;
+  margin-bottom: 3rem;
+}
+
+/* Team Desktop */
+.team .team-people .team-person img:hover {
+  filter: grayscale(100%);
+  transition: all 0.2s linear;
+}
+
+/* Footer Styles */
+.footer {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+.footer .footer-nav {
+  text-align: center;
+  margin: 2rem 0;
+}
+.footer .footer-nav a {
+  display: block;
+  text-decoration: none;
+  color: #4c4c4c;
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+
+/* Footer Tablet */
+@media (min-width: 768px) {
+  .footer {
+    flex-flow: column;
+    justify-content: space-evenly;
+  }
+  .footer .footer-nav {
+    display: flex;
+  }
+  .footer .footer-nav a {
+    text-align: left;
+    margin: 4rem 0.5rem;
+  }
+}
+/* Footer Desktop */
+@media (min-width: 1000px) {
+  .footer {
+    padding-bottom: 4rem;
+  }
+}

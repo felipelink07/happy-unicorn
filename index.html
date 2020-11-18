@@ -4,110 +4,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Unicorn</title>
+    <link rel="stylesheet" href="/css/estilos.css">
 
-    <link rel="stylesheet" href="styles.css">
+    <title>Happy Unicorn - A light and clean CSS library</title>
 </head>
 
 <body>
 
-    <!--Header-->
+    <header class="header">
 
-    <header class="intro">
+        <!--Navbar-->
 
-        <nav class="nav-bar">
-            <ul class="main-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li class="dropdown"><a href="#" >Documentation</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Get Start</a></li>
-                        <li><a href="#">Layout</a></li>
-                        <li><a href="#">Colors</a></li>
-                        <li><a href="#">Forms</a></li>
-                        <li><a href="#">Modifiers</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="navbar-links container">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Documentation</a>
+                <a href="#">Contact</a>
+                <a href="#" class="download-btn">Download</a>
+                <a href="#"class="donate-btn">Donate</a>
+            </div>
+            <a href="#" id="toggle-button"></a>
         </nav>
 
-        <div class="intro-content">
+        <!--Intro and CTA-->
+
+        <div class="intro container">
             <div class="intro-text">
-                <h2>HappyUnicorn.css</h2>
-                <p>A modern and brand new CSS library<p>
-                <a href="#" class="cta">Get Started</a>
+                <h2>HappyUnicorn.CSS</h2>
+                <p>A clean and light CSS
+                    library for personal
+                    portifólio build </p>
+                <a href="#" class="btn-cta">Get Start</a>
             </div>
-
-            <div class="intro-img">
-                
-            </div>
-
+            <img src="/img/unicornios/happyunicorn.png" alt="unicornio feliz" class="intro-img">
         </div>
-
+        
     </header>
 
-    <!--Main-->
+    <!--end of header-->
 
     <main class="main">
-        <div class="main-intro">
-            <h3>Don't waste your time.</h3>
-            <p>With <strong>happyunicorn.css</strong> you can edit and manipulate your html styles directly in the css
-                file!</p>
-            <p>No more adding a bunch of classes and memorizing padding and margin numbers </p>
-            <p>The <strong>hu.css</strong> is made using SASS, one of the most used css libraries on the web. All the
-                html content is manipulated trought the scss file and cimpliled in CSS</p>
-            <p>You just need the create the classes in the HTML file and make all modification in the css, or no classes
-                at all!</p>
-        </div>
 
-        <!-- Sidebar -->
+        <section class="features container">
 
-        <div class="main-sidebar">
-            <div class="topic">
-                <h3>Caracteristics</h3>
-                <ul>
-                    <li>No need to memorize hundreds of classes</li>
-                    <li>Simples application</li>
-                    <li>@include based: You import the styles using. <strong>@iclude</stron> insted of classes</li>
-                </ul>
+            <div class="features-intro ">
+                <h3>Don't waste your time</h3>
+                <p>No more adding a bunch of classes and memorizing padding and margin numbers.</p>
+                <p>The <strong>hu.css</strong> is made using SASS, one of the most used css libraries on the web. All
+                    the html
+                    content is manipulated trought the scss file and cimpliled in CSS.</p>
+                <p>With <strong>happyunicorn.css</strong> you can edit and manipulate your html styles directly in the
+                    css file!</p>
             </div>
-            <div class="topic">
-                <h3>What you need to start</h3>
-                <p>In order to user our library you need onlye some knowleged about CSS and HTML. But you can handle
-                    well just with the basics and Sass is easy to learn. Check the <a href="#">Sass oficial site</a> to
-                    get start.</p>
+            <div class="install-guide">
+                <h3>Install Guide</h3>
+                <h4>NPM</h4>
+                <p>You can install hu.css using the npm command</p>
+                <div class="code">
+                    Npm install happyunicorn
+                </div>
+                <h4>CDN</h4>
+                <p>The CSS is also found using the CDN link</p>
+                <div>
+                    <a href="#" class="link">www.github.com/bulma/cdn</a>
+                </div>
             </div>
-            <div class="topic">
-                <h3>Tutorials</h3>
-                <p>Need to lean how to use uh.css? We prepared a <a href="#">tutorial that show the basics.</a></p>
+
+        </section>
+
+        <!--End of Install-guide-->
+
+        <section class="features container">
+            <div>
+                <h3>No need of hundreds of classes</h3>
+                <p>The hu.css is made by using SASS mixins. You just need to
+                    declare the css classe and import the styles directly on the css file.</p>
             </div>
-        </div>
-        </div>
+            <img src="/img/unicornios/wine-unicorn.png" alt="unicornio tomando vinho">
+        </section>
+
+        <section class=" include bg-grey">
+            <div class="inner-feature">
+                <img src="/img/unicornios/glassunicorn.png" alt="">
+                <div>
+                    <h3>@include based</h3>
+                    <p>With the hu.css you import the styles using @include, the styles are simple to edit and you can
+                        import as many as you need. The css delcaration boby will became more clean.</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="features container">
+            <div>
+                <h3>Simple instalation</h3>
+                <p>You can <a href="#" class="link">download our css</a> file or copy the HTML template below to star
+                    using the
+                    library using the CDN links.</p>
+            </div>
+            <img src="/img/unicornios/positive-unicorn.png" alt="">
+        </section>
+
+        <section class="team container">
+            <h3>The Team</h3>
+            <div class="team-people">
+                <div class="team-person">
+                    <img src="/img/time/amanda.png" alt="">
+                    <h4>Amanda Kuller</h4>
+                    <p>Front end developer</p>
+                </div>
+                <div class="team-person">
+                    <img src="/img/time/josh-miller.png" alt="">
+                    <h4>Josh Miller</h4>
+                    <p>Back end developer and designer</p>
+                </div>
+                <div class="team-person">
+                    <img src="/img/time/Mike Lorenzo.png" alt="">
+                    <h4>Mike Lorenzo</h4>
+                    <p>Marketing</p>
+                </div>
+            </div>
+        </section>
+
+        <!--End of Team-->
     </main>
 
-    <!--Footer-->
+    <!--end of main-->
 
-    <foter>
-        <div class="footer">
+    <footer class="footer bg-grey container">
+        <nav class="footer-nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Documentation</a>
+            <a href="#">Contact</a>
+            <a href="#">Download</a>
+            <a href="#">Donate</a>
+        </nav>
+        <a href="#"><img src="/img/system/GitHub-Mark-64px.png" alt=""></a>
+    </footer>
 
-            <div class="footer-item">
-                <h3>Who we are?</h3>
-                <p>We are a team of designers and developers with the objective to make web designers and code fighters
-                    a little bit easer.</p>
-            </div>
-            <div class="footer-item">
-                <h3>The main point</h3>
-                <p>Our library is recomended for simple project and personal use only. But basically everybody can use
-                    this code.</p>
-            </div>
-
-        </div>
-        </footer>
-
-
-
-
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

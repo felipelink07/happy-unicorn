@@ -1,0 +1,265 @@
+@import 'colors';
+
+.btn-cta {
+    display: block;
+    background-color: $cta-color;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #a05344;
+    border-radius: 3px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+
+    &:hover{
+       background-color: #ffcc5d;
+       transition: all 0.3s linear;
+       
+    }
+}
+
+.download-btn{
+    background-color: #19d3da;
+    padding: 1rem 1rem;
+    border-radius: 3px;
+}
+
+.donate-btn{
+    background-color: $cta-color;
+    padding: 1rem 1rem;
+    border-radius: 3px;
+}
+
+@media (min-width: 1000px){
+    .btn-cta{
+        padding: 1.5rem 2rem;
+    }
+}
+
+
+
+
+/* Header Styles */
+.header {
+    background-color: $primary-color;
+
+    .navbar {
+        position: relative;
+        height: 10vh;
+
+        .navbar-links {
+            position: absolute;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            left: -70vw;
+            top: 0;
+            width: 70vw;
+            height: 100vh;
+            background-color: $primary-color;
+            box-shadow: 0px 0px 15px 0px rgb(000, 000, 000, 0);
+            transition: all 0.3s linear;
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: white;
+                margin: 2rem 0;
+            }
+
+
+            a[class="download-btn"]{
+                font-weight: 600;
+            }
+
+            a[class="donate-btn"]{
+                color: #a05344;
+                font-weight: 600;
+            }
+        }
+
+        .show {
+            left: 0vw;
+            box-shadow: 5px 0px 25px 10px rgb(000, 000, 000, 0.2);
+            transition: all 0.3s linear;
+        }
+    }
+}
+
+
+/* Header Tablet */
+
+@media (min-width: 768px) {
+    .header {
+
+        .navbar {
+
+            .navbar-links {
+                background-color: rgba(154, 179, 245, 0.3);
+                height: 8vh;
+                width: 100%;
+                top: 0;
+                left: 0;
+                flex-flow: row;
+                justify-content: space-evenly;
+            }
+        }
+
+        #toggle-button {
+            display: none;
+        }
+    }
+}
+
+
+
+/* Header desktop */
+
+@media (min-width: 1000px) {
+    .header {
+
+        .navbar {
+            width: 100vw;
+
+            .navbar-links {
+                height: 7vh;
+                width: 100%;
+                top: 0;
+                left: 0;
+                padding: 0 30%;
+                flex-flow: row;
+                justify-content: space-around;
+            }
+        }
+
+
+        #toggle-button {
+            display: none;
+        }
+    }
+}
+
+
+
+
+/* Intro Styles */
+
+.intro {
+    text-align: center;
+
+    .intro-text {
+
+        h2 {
+            color: white;
+            font-weight: 700;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            color: white;
+            font-size: 1rem;
+
+
+        }
+    }
+
+    .intro-img {
+        display: none;
+
+    }
+}
+
+
+/* Intro Tablet */
+
+@media (min-width: 768px) {
+
+    .intro {
+        display: flex;
+        align-items: center;
+
+        .intro-text {
+            width: 60%;
+            padding: 0;
+
+            h2 {
+                font-size: 2.5rem;
+                text-align: left;
+            }
+
+            p {
+                font-size: 1.1rem;
+                text-align: left;
+            }
+        }
+
+        .intro-img {
+            margin-left: 2rem;
+            display: block;
+
+        }
+    }
+
+}
+
+
+
+/* Intro Desktop */
+
+@media (min-width: 1000px) {
+
+    .intro {
+        max-width: 1200px;
+        justify-content: space-between;
+
+        .intro-text {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            width: 50%;
+            height: 350px;
+            padding: 0;
+
+            h2 {
+                font-size: 3.5rem;
+                text-align: left;
+            }
+
+            p {
+                font-size: 1.3rem;
+                text-align: left;
+                margin: 2rem 0;
+            }
+        }
+
+        .intro-img {
+            margin-right: 0rem;
+            width: 350px;
+            height: 350px;
+
+        }
+    }
+
+
+
+}
+
+#toggle-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: block;
+    width: 42px;
+    height: 42px;
+    background-image: url('/img/system/menu.svg');
+    background-size: cover;
+
+}
+
+.close {
+    background-image: url('/img/system/close.svg');
+}
