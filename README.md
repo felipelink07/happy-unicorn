@@ -19,4 +19,4 @@ Fiz o deploy desse projeto no Netfly para que fique online para testes.
 
 ### Imagem do projeto
 
-![](img/readme-tela.png)
+![](img/github/home.jpg)
