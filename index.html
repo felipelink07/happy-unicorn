@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="/node_modules/sal.js/dist/sal.css">
 
     <title>Happy Unicorn - A light and clean CSS library</title>
 </head>
@@ -48,7 +49,11 @@
 
         <section class="features container">
 
-            <div class="features-intro ">
+            <div class="features-intro " 
+            data-sal="slide-right"
+            data-sal-duration="1300"
+            data-sal-easing="ease-out-quad"
+            >
                 <h3>Don't waste your time</h3>
                 <p>No more adding a bunch of classes and memorizing padding and margin numbers.</p>
                 <p>The <strong>hu.css</strong> is made using SASS, one of the most used css libraries on the web. All
@@ -57,7 +62,12 @@
                 <p>With <strong>happyunicorn.css</strong> you can edit and manipulate your html styles directly in the
                     css file!</p>
             </div>
-            <div class="install-guide">
+            <div class="install-guide"
+            data-sal="slide-left"
+            data-sal-duration="1300"
+            data-sal-delay="100"
+            data-sal-easing="ease-out-quad"
+            >
                 <h3>Install Guide</h3>
                 <h4>NPM</h4>
                 <p>You can install hu.css using the npm command</p>
@@ -75,7 +85,11 @@
 
         <!--End of Install-guide-->
 
-        <section class="features container">
+        <section class="features container"
+            data-sal="slide-down"
+            data-sal-duration="1300"
+            data-sal-easing="ease-out-quad"
+        >
             <div>
                 <h3>No need of hundreds of classes</h3>
                 <p>The hu.css is made by using SASS mixins. You just need to
@@ -85,7 +99,12 @@
         </section>
 
         <section class=" include bg-grey">
-            <div class="inner-feature">
+            <div class="inner-feature"
+            data-sal="slide-down"
+            data-sal-duration="1300"
+            data-sal-easing="ease-out-quad"
+            data-sal-delay="300"
+            >
                 <img src="/img/unicornios/glassunicorn.png" alt="">
                 <div>
                     <h3>@include based</h3>
@@ -96,7 +115,12 @@
             </div>
         </section>
 
-        <section class="features container">
+        <section class="features container"
+            data-sal="slide-down"
+            data-sal-duration="1300"
+            data-sal-easing="ease-out-quad"
+            data-sal-delay="600"
+        >
             <div>
                 <h3>Simple instalation</h3>
                 <p>You can <a href="#" class="link">download our css</a> file or copy the HTML template below to star
@@ -107,19 +131,41 @@
         </section>
 
         <section class="team container">
-            <h3>The Team</h3>
+            <h3
+            data-sal="slide-down"
+            data-sal-duration="1200"
+            data-sal-easing="linear"
+            >The Team</h3>
+
             <div class="team-people">
-                <div class="team-person">
-                    <img src="/img/time/amanda.png" alt="">
+                <div class="team-person"
+                data-sal="slide-down"
+                data-sal-duration="1300"
+                data-sal-easing="ease-out-quad"
+                data-sal-delay="300">
+                    
+                <img src="/img/time/amanda.png" alt="">
                     <h4>Amanda Kuller</h4>
                     <p>Front end developer</p>
                 </div>
-                <div class="team-person">
+               
+                <div class="team-person"
+                data-sal="slide-down"
+                data-sal-duration="1300"
+                data-sal-easing="ease-out-quad"
+                data-sal-delay="600"
+                >
                     <img src="/img/time/josh-miller.png" alt="">
                     <h4>Josh Miller</h4>
                     <p>Back end developer and designer</p>
                 </div>
-                <div class="team-person">
+               
+                <div class="team-person"
+                data-sal="slide-down"
+                data-sal-duration="1300"
+                data-sal-easing="ease-out-quad"
+                data-sal-delay="900"
+                >
                     <img src="/img/time/Mike Lorenzo.png" alt="">
                     <h4>Mike Lorenzo</h4>
                     <p>Marketing</p>
@@ -145,6 +191,11 @@
     </footer>
 
     <script src="/js/main.js"></script>
+    <script src="/node_modules/sal.js/dist/sal.js"></script>
+    <script>
+        sal();
+    </script>
+
 </body>
 
 </html>
