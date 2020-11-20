@@ -5,7 +5,7 @@ ministrado pelo professor e produtor de conteúdo **Kevin Powell**
 
 ### Modificações pessoais no projeto
 
-Modifiquei cores layout e todo  o exercícop, criei um menu responsivo e adicionei um tema para o projeto.
+Modifiquei cores layout de todo o exercício, criei um menu responsivo e adicionei um tema para o projeto.
 
 ### Código
 
@@ -13,10 +13,10 @@ Fiz uma refatoração de todo o código CSS para SASS, e modifiquei detalhes no 
 
 ### Projeto online
 
-Fiz o deploy desse projeto no Netfly para que fique online para testes.
+Fiz o deploy desse projeto no **Netfly** para que fique online para testes.
 
 [www.HappyUnicorncss.com](https://unruffled-hypatia-1d8833.netlify.app/)
 
 ### Imagem do projeto
 
-![](img/readme-tela.png)
+![](img/github/home.jpg)
