@@ -15,7 +15,7 @@ Fiz uma refatoração de todo o código CSS para SASS, e modifiquei detalhes no 
 
 Fiz o deploy desse projeto no **Netfly** para que fique online para testes.
 
-[www.HappyUnicorncss.com](https://unruffled-hypatia-1d8833.netlify.app/)
+[www.HappyUnicorncss.com](https://happyunicorn.netlify.app/)
 
 ### Imagem do projeto
 
